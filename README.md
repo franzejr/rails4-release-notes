@@ -72,3 +72,24 @@ In our view:
 <h1><%= grunt %></h1>
 ```
 So, no more flash[:notice] in our erb file. Just use notice.
+
+
+##### Collection form helpers
+
+```ruby
+collection_radio_buttons(:item, :owner_id,Owner.all,:id,:name)
+collection_check_boxes(:item, :owner_id,Owner.all,:id,:name)
+```
+
+##### Date Field
+
+```ruby
+<%= f.date_field  :date %>
+```
+
+HTML Output:
+```html
+<input id="item_date" name="item[date]" type="date" >
+```
+It comes back to controller as a single parameter
+"date" => "2013-17-11"
