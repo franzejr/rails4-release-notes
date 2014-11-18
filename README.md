@@ -48,7 +48,7 @@ class PeopleController < ActionController::Base
 end
 ```
 
-###### FLASH
+##### FLASH
 
 Specify flash types
 
