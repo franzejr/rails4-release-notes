@@ -93,3 +93,8 @@ HTML Output:
 ```
 It comes back to controller as a single parameter
 "date" => "2013-17-11"
+
+
+##### Ruby Template Handler
+
+Now you can use a pure-Ruby tempalte handler by giving the file a .ruby extension
