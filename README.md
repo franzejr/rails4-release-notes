@@ -98,3 +98,27 @@ It comes back to controller as a single parameter
 ##### Ruby Template Handler
 
 Now you can use a pure-Ruby tempalte handler by giving the file a .ruby extension
+
+##### Re-adding performance testing
+
+Performance tests are no longer in default stack. Here's how you can add it back:
+
+Gemfile
+```ruby
+gem 'rails-perftest'
+gem 'ruby-proof'
+```
+
+##### Minitest
+
+
+```ruby
+module ActiveSupport
+ class TestCase < ::MiniTest::Unit::TestCase
+ end
+end
+```
+
+##### Minitest skip method
+
+Use skip method if you don't want to run a test right now.
