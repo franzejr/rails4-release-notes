@@ -154,3 +154,15 @@ class MostWantedController < ApplicationController
   end
 end
 ```
+
+##### Memcache Store uses Dalli
+
+Dalli is a high performance pure Ruby client for accessing memcached servers:
+
+Benefits of using dalli include:
+
+- Approximately 20% faster than memcache-client
+- Provides proper failover with recovery and adjustable timeouts
+- Easier to integrate with monitoring tools like NewRelic RPM in order to track usage 
+- ThreadSafe
+- Backwards compatible with the previous memcache-client API
