@@ -122,3 +122,35 @@ end
 ##### Minitest skip method
 
 Use skip method if you don't want to run a test right now.
+
+##### ETAGS
+
+ETAg is a key we use to determine whether a page has changed.
+
+###### Setting custom etag
+
+```ruby
+class  ItemsController  < ApplicationController
+  def show
+    @item = Item.find(params[:id])
+    fresh_when(@item)
+  end
+end
+```
+
+
+We can just use on the controller:
+```ruby
+class MostWantedController < ApplicationController
+  etag {current_user.country}
+  def show
+    @zombie = Zombie.most_wanted
+    fresh_when(@zombie)
+  end
+
+  def edit
+    @zombie = Zombie.most_wanted
+    fresh_when(@zombie)
+  end
+end
+```
