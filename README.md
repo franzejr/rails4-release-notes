@@ -166,3 +166,6 @@ Benefits of using dalli include:
 - Easier to integrate with monitoring tools like NewRelic RPM in order to track usage 
 - ThreadSafe
 - Backwards compatible with the previous memcache-client API
+
+
+http://blog.remarkablelabs.com/2012/11/rails-4-countdown-to-2013
